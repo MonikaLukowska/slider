@@ -88,8 +88,8 @@ button {
 
 button.play {
     position: absolute;
-    bottom: 7px;
-    right: 0;
+    bottom: 5px;
+    right: 15px;
     width: 0;
     height: 0;
     border-style: none;
@@ -97,4 +97,30 @@ button.play {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 13px solid #a55;
+}
+
+.stop {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+
+}
+
+.stop>span {
+    display: inline-block;
+    background-color: #a55;
+    width: 5px;
+    height: 20px;
+
+}
+
+.stop>span:after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 90%;
+    width: 5px;
+    height: 20px;
+    background-color: #a55;
+
 }

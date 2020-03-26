@@ -4,6 +4,7 @@ const dots = [...document.querySelectorAll('.dot')];
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 const btnPlay = document.querySelector('.play');
+const btnStop = document.querySelector('.stop');
 let active = 0;
 const time = 2000;
 let play = false;
@@ -55,8 +56,6 @@ dots.forEach(dot => dot.addEventListener('click', () => {
 
 const nextPrev = (e) => {
 
-
-
 if (e.target.classList.contains('next') || e.target.classList.contains('prev')){
     
     if (play === true) {
@@ -75,7 +74,6 @@ if (e.target.classList.contains('next') || e.target.classList.contains('prev')){
        
    } 
 } 
-console.log
 }
 
 next.addEventListener('click', nextPrev);
@@ -84,5 +82,10 @@ btnPlay.addEventListener('click', () => {
      index = setInterval(changeSlide,time);
      play = true;
 } )
+
+btnStop.addEventListener('click', () => {
+    clearInterval(index);
+    play = false;
+})
 
 
