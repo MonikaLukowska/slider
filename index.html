@@ -11,22 +11,22 @@
 
 <body>
     <div class="slider-container">
-        <div class="slider">
+        <ul class="slider">
             <button class="move prev">
                 <<</button> <figure class="slide">
-                    <img src="img/img1.jpg">
+                    <img class="slide-img" src="img/img1.jpg">
                     </figure>
                     <button class="move next">>></button>
-                    <div class="pins">
-                        <button id="1" class="active"></button>
-                        <button id="2"></button>
-                        <button id="3"></button>
-                    </div>
+                    <ul class="dots">
+                        <button><span class="dot active" id="1"></span></button>
+                        <button><span class="dot" id="2"></span></button>
+                        <button><span class="dot" id="3"></span></button>
+                    </ul>
                     <button class="play"></button>
-        </div>
-
     </div>
 
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
